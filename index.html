@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e Commerce</title>
+
+    <!-- CSS file link here -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <!-- Font awesome link below  For Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--Google fonts link   -->
+
+
+
+    <!--Bootstrap Link   -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+
+
+</head>
+
+<body>
+
+
+    
+                        <!-- .........Header Starts........... -->
+        <header>
+                         <!-- .........Top NavBar Starts Under Header.......... -->
+            <nav class="row top-nav d-flex align-items-center justify-content-around">
+                                
+                    <figure class="col-4 col-md-2 mb-0 d-flex align-items-center justify-content-start gap-3">
+                        <i class="fa fa-bars" id="icon-manu"></i>
+                        <i  class="fa fa-times" id="icon-cross"></i>
+                            <a href="index.html"><img src="image/logo-1.png" alt=""></a>
+                        </figure>
+               
+                    <div class="col-8 col-md-6 search-box d-flex">
+                        <input class="form-control" type="search" name="" id="">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                    </div>
+                        <div class="col-12 col-md-4 manu-bar">
+                            <ul class="" >
+                                <li>
+                                    <i class=" fa fa-shopping-cart"></i>
+                                    <a href="#">Cart</a>
+                                </li>
+                                <li><a href="#">Sign Up</a></li>
+                                <li><a href="#">Log In</a></li>
+                            </ul>
+                        </div>
+
+
+                
+            </nav>
+
+                    <!-- ***************Top NavBar Ends under Header************** -->
+
+
+                    <!-- ***************Left NavBar Starts under Header************** -->
+          <nav class="d-flex">
+            <div class="left-navbar ">
+                <ul class="">
+                    <li>
+                        <a href="#">On Sale </a>
+                         <i class="fa-solid fa-chevron-right"></i>
+                         <ul class="sub-manu">
+                            <li><a href="#">Category-1</a></li>
+                            <li><a href="#">Category-1</a></li>
+                            <li><a href="#">Category-1</a></li>
+                            <li><a href="#">Category-1</a></li>
+                            <li><a href="#">Category-1</a></li>
+                            <li><a href="#">Category-1</a></li>
+                            <li><a href="#">Category-1</a></li>
+                        </ul>
+                        </li>
+                    <li class="">
+                        <a href="#">Mobile</a> 
+                        <i class="fa-solid fa-chevron-right"></i>
+                            <ul class="sub-manu">
+                                <li><a href="#">Symphony</a></li>
+                                <li><a href="#">Vivo</a></li>
+                                <li><a href="#">Samsung</a></li>
+                                <li><a href="#">Nokia</a></li>
+                                <li><a href="#">Techno</a></li>
+                                <li><a href="#">Oppo</a></li>
+                                <li><a href="#">Realme</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                         <a href="#">Books</a>
+                         <i class="fa-solid fa-chevron-right"></i>
+                            <ul class="sub-manu">
+                                <li><a href="#">Adventure stories</a></li>
+                                <li><a href="#">Classics</a></li>
+                                <li><a href="#">Crime</a></li>
+                                <li><a href="#">Horror</a></li>
+                                <li><a href="#">Historical fiction</a></li>
+                                <li><a href="#">Child Category</a></li>
+                                <li><a href="#">Science Fiction</a></li>
+                            </ul>
+                        </li>
+                    <li><a href="#">Fitness</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="#">Baby Care</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="#">Magazins</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="#">Accessories</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="#">Movies & Music</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="#">Video & Games</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li><a href="#">Home & Kitchen</a> <i class="fa-solid fa-chevron-right"></i></li>
+                    <li>
+                        <a href="#">Furniture</a> 
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <ul class="sub-manu">
+                            <li><a href="#">Chair</a></li>
+                            <li><a href="#">Reading Table</a></li>
+                            <li><a href="#">Bed</a></li>
+                            <li><a href="#">Sofa</a></li>
+                            <li><a href="#">Dressing Table</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Grocery</a> <i class="fa-solid fa-chevron-right"></i></li>
+                </ul>
+
+            </div>
+
+            <div class="slider">
+                <div id="myCarousel" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" ></li>
+                      <li data-bs-target="#myCarousel" data-bs-slide-to="1" ></li>
+                      <li data-bs-target="#myCarousel" data-bs-slide-to="2" ></li>
+                    </ol>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="8000">
+                        <div class="overlay-img" style="background-image: url(image/Carousal-1.jpg);"></div>       
+                      </div>
+              
+                      <div class="carousel-item" data-bs-interval="5000">
+                          <div class="overlay-img" style="background-image: url(image/Carousal-2.jpg);"></div>
+                      </div>
+              
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <div class="overlay-img" style="background-image: url(image/Carousal-3.jpg);"></div>
+                      </div>
+              </div>
+                
+              </div>
+            </div>
+
+
+          </nav>    
+          
+          
+          
+          <!-- ***************left NavBar Ends under Header************** -->
+                    
+
+
+
+        </header>
+
+
+
+                 <!-- .........Header Ends........... -->
+
+
+
+                <!-- .........Main Starts........... -->
+
+        <main>
+                        <!-- .........Features Starts under Main........... -->
+            <section class="features">
+                <div class="container">
+                    <div class="title mb-5 mt-2">
+                        <h1 class="">Features</h1>
+                    </div>
+    
+                    <div class="row">
+                        <div class="col-12 col-md-10 col-lg-4 m-md-auto">
+                            <div class="feature hover">
+                                <img class="" src="image/fea-img-1.avif" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-10 col-lg-4 m-md-auto">
+                            <div class="feature hover">
+                                <img class="" src="image/fea-img-2.avif" alt="">
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-10 col-lg-4 m-md-auto">
+                            <div class="feature hover">
+                                <img class="" src="image/fea-img-3.avif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                    <!-- .........Features Ends under Main........... -->
+
+
+
+                        <!-- .........On Sale starts under Main........... -->
+
+
+            <section class="on-sale">
+                <div class="container">
+                    <div class="title mb-5 mt-2">
+                        <h1 class="">On Sale</h1>
+                    </div>
+
+                    <div class="row ">
+                       <div class="col-12 col-md-6  col-lg-3 ">
+                            <div class="on-sale_product">
+                                <figure class="">
+                                    <a href="product.html"><img class="" src="image/on sale-1.jpg" alt=""></a>
+
+                                    
+                                        <div class="overlay-options ">
+                                            <button class="btn btn-light" type="button" title="Quick Shop">
+                                                <i class=" p-1 fa-regular fa-eye"></i>
+                                            </button>
+
+                                            <button class="btn btn-light" type="button" title="Add To White List">
+                                                <i class=" p-1 fa-regular fa-heart "></i>
+                                            </button>
+                                            
+                                            <button class="btn btn-light" type="button" title="Add To Cart">
+                                                <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                            </button>
+                                            
+                                        </div>
+                                  
+                                </figure>
+                                <div class="product-detail">
+                                    <span class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                      </span>
+
+                                      <h2>Socks</h2>
+                                      <h4>$10.00</h4>
+                                </div>
+                            </div>
+                       </div>
+
+                       <div class="col-12 col-md-6  col-lg-3 ">
+                        <div class="on-sale_product ">
+                            <figure class="">
+                               <a href="product.html"> <img class="" src="image/on sale-2.jpg" alt=""></a>
+
+                                <div class="overlay-options ">
+                                    <button class="btn btn-light" type="button" title="Quick Shop">
+                                        <i class=" p-1 fa-regular fa-eye"></i>
+                                    </button>
+
+                                    <button class="btn btn-light" type="button" title="Add To White List">
+                                        <i class=" p-1 fa-regular fa-heart "></i>
+                                    </button>
+                                    
+                                    <button class="btn btn-light" type="button" title="Add To Cart">
+                                        <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                    </button>
+                                    
+                                </div>
+                            </figure>
+                            <div class="product-detail">
+                                <span class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                      </span>
+                                      
+                                      <h2>Shoe</h2>
+                                      <h4>$85.00</h4>
+                            </div>
+                        </div>
+                   </div>
+
+                   <div class="col-12 col-md-6  col-lg-3 ">
+                    <div class="on-sale_product">
+                        <figure class="">
+                            <a href="product.html"><img class="" src="image/on sale-3.jpg" alt=""></a>
+
+                            <div class="overlay-options ">
+                                <button class="btn btn-light" type="button" title="Quick Shop">
+                                    <i class=" p-1 fa-regular fa-eye"></i>
+                                </button>
+
+                                <button class="btn btn-light" type="button" title="Add To White List">
+                                    <i class=" p-1 fa-regular fa-heart "></i>
+                                </button>
+                                
+                                <button class="btn btn-light" type="button" title="Add To Cart">
+                                    <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                </button>
+                                
+                            </div>
+                        </figure>
+                        <div class="product-detail">
+                            <span class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star-half"></i>
+                              </span>
+                              
+                              <h2>Bag</h2>
+                              <h4>$30.00</h4>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="col-12 col-md-6  col-lg-3 ">
+                <div class="on-sale_product">
+                    <figure class="">
+                        <a href="product.html"><img class="" src="image/on sale-4.jpg" alt=""></a>
+
+                        <div class="overlay-options ">
+                            <button class="btn btn-light" type="button" title="Quick Shop">
+                                <i class=" p-1 fa-regular fa-eye"></i>
+                            </button>
+
+                            <button class="btn btn-light" type="button" title="Add To White List">
+                                <i class=" p-1 fa-regular fa-heart "></i>
+                            </button>
+                            
+                            <button class="btn btn-light" type="button" title="Add To Cart">
+                                <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                            </button>
+                            
+                        </div>
+                    </figure>
+                    <div class="product-detail">
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </span>
+                          
+                          <h2>Watch</h2>
+                          <h4>$40.00</h4>
+                    </div>
+                </div>
+           </div>
+                    </div>
+
+                    <!-- *********************2nd Row of on sale under main****************** -->
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6  col-lg-3 ">
+                             <div class="on-sale_product">
+                                 <figure class="">
+                                     <img class="" src="image/on sale-5.jpg" alt="">
+ 
+                                     
+                                         <div class="overlay-options ">
+                                             <button class="btn btn-light" type="button" title="Quick Shop">
+                                                 <i class=" p-1 fa-regular fa-eye"></i>
+                                             </button>
+ 
+                                             <button class="btn btn-light" type="button" title="Add To White List">
+                                                 <i class=" p-1 fa-regular fa-heart "></i>
+                                             </button>
+                                             
+                                             <button class="btn btn-light" type="button" title="Add To Cart">
+                                                 <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                             </button>
+                                             
+                                         </div>
+                                   
+                                 </figure>
+                                 <div class="product-detail">
+                                     <span class="star">
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="far fa-star"></i>
+                                       </span>
+ 
+                                       <h2>Watch</h2>
+                                       <h4>$32.00</h4>
+                                 </div>
+                             </div>
+                        </div>
+ 
+                        <div class="col-12 col-md-6  col-lg-3 ">
+                         <div class="on-sale_product ">
+                             <figure class="">
+                                 <img class="" src="image/on sale-6.jpg" alt="">
+ 
+                                 <div class="overlay-options ">
+                                     <button class="btn btn-light" type="button" title="Quick Shop">
+                                         <i class=" p-1 fa-regular fa-eye"></i>
+                                     </button>
+ 
+                                     <button class="btn btn-light" type="button" title="Add To White List">
+                                         <i class=" p-1 fa-regular fa-heart "></i>
+                                     </button>
+                                     
+                                     <button class="btn btn-light" type="button" title="Add To Cart">
+                                         <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                     </button>
+                                     
+                                 </div>
+                             </figure>
+                             <div class="product-detail">
+                                 <span class="star">
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                         <i class="fas fa-star"></i>
+                                       </span>
+                                       
+                                       <h2>Iron</h2>
+                                       <h4>$165.00</h4>
+                             </div>
+                         </div>
+                    </div>
+ 
+                    <div class="col-12 col-md-6  col-lg-3 ">
+                     <div class="on-sale_product">
+                         <figure class="">
+                             <img class="" src="image/on sale-7.jpg" alt="">
+ 
+                             <div class="overlay-options ">
+                                 <button class="btn btn-light" type="button" title="Quick Shop">
+                                     <i class=" p-1 fa-regular fa-eye"></i>
+                                 </button>
+ 
+                                 <button class="btn btn-light" type="button" title="Add To White List">
+                                     <i class=" p-1 fa-regular fa-heart "></i>
+                                 </button>
+                                 
+                                 <button class="btn btn-light" type="button" title="Add To Cart">
+                                     <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                 </button>
+                                 
+                             </div>
+                         </figure>
+                         <div class="product-detail">
+                             <span class="star">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star-half"></i>
+                               </span>
+                               
+                               <h2>Chair</h2>
+                               <h4>$30.00</h4>
+                         </div>
+                     </div>
+                </div>
+ 
+                <div class="col-12 col-md-6  col-lg-3 ">
+                 <div class="on-sale_product">
+                     <figure class="">
+                         <img class="" src="image/on sale-8.jpg" alt="">
+ 
+                         <div class="overlay-options ">
+                             <button class="btn btn-light" type="button" title="Quick Shop">
+                                 <i class=" p-1 fa-regular fa-eye"></i>
+                             </button>
+ 
+                             <button class="btn btn-light" type="button" title="Add To White List">
+                                 <i class=" p-1 fa-regular fa-heart "></i>
+                             </button>
+                             
+                             <button class="btn btn-light" type="button" title="Add To Cart">
+                                 <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                             </button>
+                             
+                         </div>
+                     </figure>
+                     <div class="product-detail">
+                         <span class="star">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="far fa-star"></i>
+                             <i class="far fa-star"></i>
+                           </span>
+                           
+                           <h2>Shoe</h2>
+                           <h4>$35.00</h4>
+                     </div>
+                 </div>
+            </div>
+                     </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+
+
+                        <!-- .........On Sale Ends under Main........... -->
+
+ 
+
+                        <!-- .........New Arrivals starts under Main........... -->
+
+                        <section class="new-arrivals">
+                            <div class="container">
+                                <div class="title mb-5 mt-2">
+                                    <h1 class="">New Arrivals</h1>
+                                </div>
+            
+                                <div class="row ">
+                                   <div class="col-12 col-md-6  col-lg-3 ">
+                                        <div class="new-arrivals_product">
+                                            <figure class="">
+                                                <a href="product.html"><img class="" src="image/on sale-1.jpg" alt=""></a>
+            
+                                                
+                                                    <div class="overlay-options ">
+                                                        <button class="btn btn-light" type="button" title="Quick Shop">
+                                                            <i class=" p-1 fa-regular fa-eye"></i>
+                                                        </button>
+            
+                                                        <button class="btn btn-light" type="button" title="Add To White List">
+                                                            <i class=" p-1 fa-regular fa-heart "></i>
+                                                        </button>
+                                                        
+                                                        <button class="btn btn-light" type="button" title="Add To Cart">
+                                                            <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                                        </button>
+                                                        
+                                                    </div>
+                                              
+                                            </figure>
+                                            <div class="product-detail">
+                                                <span class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                  </span>
+            
+                                                  <h2>Socks</h2>
+                                                  <h4>$10.00</h4>
+                                            </div>
+                                        </div>
+                                   </div>
+            
+                                   <div class="col-12 col-md-6  col-lg-3 ">
+                                    <div class="new-arrivals_product ">
+                                        <figure class="">
+                                            <a href="product.html"><img class="" src="image/on sale-2.jpg" alt=""></a>
+            
+                                            <div class="overlay-options ">
+                                                <button class="btn btn-light" type="button" title="Quick Shop">
+                                                    <i class=" p-1 fa-regular fa-eye"></i>
+                                                </button>
+            
+                                                <button class="btn btn-light" type="button" title="Add To White List">
+                                                    <i class=" p-1 fa-regular fa-heart "></i>
+                                                </button>
+                                                
+                                                <button class="btn btn-light" type="button" title="Add To Cart">
+                                                    <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                                </button>
+                                                
+                                            </div>
+                                        </figure>
+                                        <div class="product-detail">
+                                            <span class="star">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                  </span>
+                                                  
+                                                  <h2>Shoe</h2>
+                                                  <h4>$85.00</h4>
+                                        </div>
+                                    </div>
+                               </div>
+            
+                               <div class="col-12 col-md-6  col-lg-3 ">
+                                <div class="new-arrivals_product">
+                                    <figure class="">
+                                        <a href="product.html"><img class="" src="image/on sale-3.jpg" alt=""></a>
+            
+                                        <div class="overlay-options ">
+                                            <button class="btn btn-light" type="button" title="Quick Shop">
+                                                <i class=" p-1 fa-regular fa-eye"></i>
+                                            </button>
+            
+                                            <button class="btn btn-light" type="button" title="Add To White List">
+                                                <i class=" p-1 fa-regular fa-heart "></i>
+                                            </button>
+                                            
+                                            <button class="btn btn-light" type="button" title="Add To Cart">
+                                                <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                            </button>
+                                            
+                                        </div>
+                                    </figure>
+                                    <div class="product-detail">
+                                        <span class="star">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star-half"></i>
+                                          </span>
+                                          
+                                          <h2>Bag</h2>
+                                          <h4>$30.00</h4>
+                                    </div>
+                                </div>
+                           </div>
+            
+                           <div class="col-12 col-md-6  col-lg-3 ">
+                            <div class="new-arrivals_product">
+                                <figure class="">
+                                    <a href="product.html"><img class="" src="image/on sale-4.jpg" alt=""></a>
+            
+                                    <div class="overlay-options ">
+                                        <button class="btn btn-light" type="button" title="Quick Shop">
+                                            <i class=" p-1 fa-regular fa-eye"></i>
+                                        </button>
+            
+                                        <button class="btn btn-light" type="button" title="Add To White List">
+                                            <i class=" p-1 fa-regular fa-heart "></i>
+                                        </button>
+                                        
+                                        <button class="btn btn-light" type="button" title="Add To Cart">
+                                            <i class=" p-1 fa-solid fa-cart-shopping "></i>
+                                        </button>
+                                        
+                                    </div>
+                                </figure>
+                                <div class="product-detail">
+                                    <span class="star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                      </span>
+                                      
+                                      <h2>Watch</h2>
+                                      <h4>$40.00</h4>
+                                </div>
+                            </div>
+                       </div>
+                                </div>
+            
+            
+                                </div>
+            
+            
+            
+            
+            
+                            </div>
+                        </section>
+
+
+
+
+                        <!-- .........New Arrivals Ends under Main........... -->
+
+
+                              <!-- .........Website Feature starts under Main........... -->
+                        <section class="website-features">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="website-feature col-12 col-md-6 col-lg-3">
+                                        <img class="" src="image/feature-1.png" alt="">
+                                        <h4><span class="fw-bolder">100% Orginal Items</span> Are Available at Company</h4>
+                                    </div>
+
+                                    <div class="website-feature col-12 col-md-6 col-lg-3">
+                                        <img class="" src="image/feature-2.png" alt="">
+                                        <h4><span class="fw-bolder">Return within 30 days</span> of receiving your order</h4>
+                                    </div>
+
+                                    <div class="website-feature col-12 col-md-6 col-lg-3">
+                                        <img class="" src="image/feature-3.png" alt="">
+                                        <h4><span class="fw-bolder">Get free delivery of every order</span> on more then price</h4>
+                                    </div>
+
+                                    <div class="website-feature col-12 col-md-6 col-lg-3">
+                                        <img class="" src="image/feature-4.png" alt="">
+                                        <h4><span class="fw-bolder">Pay online</span> through multiple options (Card/Net Banking)</h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+                 <!-- ........Website Feature Ends under Main........... -->
+
+        </main>
+
+                    <!-- .........Main Ends........... -->
+
+
+        <!-- .........Footer Starts........... -->
+
+        <footer>
+           <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="links">
+                            <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">Discounts Coupons</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                        <!-- Use above(Links) CSS style so class name does not chage -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="links">
+                            <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Affiliate</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                    <!-- Use above(Links) CSS style so class name does not chage -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="links">
+                            <h4>Follow Us On</h4>
+                        <ul>
+                            <li><a href="#"><i class="me-2 fs-5 fa-brands fa-facebook-square"></i> Facebook</a></li>
+                            <li><a href="#"><i class="me-2 fs-5 fa-brands fa-youtube"></i> Youtube</a></li>
+                            <li><a href="#"><i class="me-2 fs-5 fa-brands fa-linkedin"></i> Linkdin</a></li>
+                            <li><a href="#"><i class="me-2 fs-5 fa-brands fa-twitter"></i> Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="links">
+                            <h4>Download App</h4>
+                        <ul>
+                            <li><a href="#"><img class="" src="image/download-1.png" alt=""></a></li>
+                            <li><a href="#"><img class="" src="image/download-2.png" alt=""></a></li>
+                           
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 mt-2 pt-3 border-top">
+        
+                    <p class="text-center mb-5 fs-5">Made With Love by Ashish</p>
+                </div>
+            </div>
+
+           </div>
+
+
+
+        </footer>
+
+
+    <!-- .........Footer Ends........... -->
+
+    
+
+
+<!-- BootStrap Javascript link -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+<!-- Javascript link -->
+<script src="script.js"></script>
+
+</body>
+
+</html>

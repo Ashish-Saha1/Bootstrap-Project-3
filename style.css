@@ -1,0 +1,764 @@
+/* ---------------Common Code Starts Here----------------- */
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+  
+    }
+
+    html{
+        scroll-behavior: smooth;
+        font-size: 62.5%;
+        
+    }
+
+    body{
+        background-color: #F0F0EF;
+        font-size: 1.6rem;
+      }
+
+    :root{
+        --main_color: orange;
+        --transition: .4s all ease;
+        --btn_color:#BBE1FA;
+        --box-shadow: 1px 3px 5px gray;
+      }
+
+      .hover:hover{
+        transform: scale(1.1);
+      }
+
+/* ------------Common Code Ends Here-------------------*/
+
+
+/* -----------Top Nav Starts--------- */
+.top-nav{
+    /* height: 5.7rem; */
+    top: 0;
+    position: sticky;
+    background-color: #fff;
+    margin-bottom: 2rem;
+    border-bottom: .3rem solid orange;
+    z-index: 11;
+    
+}
+
+.top-nav figure{
+    padding-left: 1.5rem;
+ }
+
+ .top-nav .search-box{
+     padding-right: 1.5rem;
+ }
+
+.fa-bars, .fa-times{
+    font-size: 3rem;
+    color: orange;
+}
+
+#icon-manu{
+    display: none;
+}
+
+#icon-cross{
+    display: none;
+}
+
+.top-nav img{
+    width: 3.8rem;
+    height: auto;
+
+}
+
+.search-box input{
+    width: 90%;
+    border: 1px solid orange;
+    height: 3.5rem;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-size: 1.6rem;
+    padding: 0 3rem;
+
+}
+
+.search-box input[type='search']:focus{
+    box-shadow: none;
+    padding: 0 3rem;
+    font-size: 2rem;
+}
+
+.input-group-text{
+    background-color: orange !important;
+    width: 3rem;
+    height: 3.5rem;
+    border-radius: 0 !important;
+    border-top-right-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+    border: none !important;
+
+}
+
+
+.fa-search{
+    font-size: 1.4rem !important;
+    color: #fff;
+}
+
+.manu-bar{
+ padding: 0 ;
+
+
+}
+
+.manu-bar ul{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    justify-content: end;
+    padding-left: 0;
+}
+
+.manu-bar ul li{
+    background-color: orange;
+    margin-left: .1rem;
+    padding: .4rem .2rem;
+    width: 10rem;
+    text-align: center;
+    height: 5.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manu-bar ul li a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+
+}
+
+.manu-bar ul li i{
+    font-size: 1.5rem;
+    margin-right: .3rem;
+    color: #fff;
+}
+
+
+
+/* -----------Top Nav Ends--------- */
+
+
+/* -----------Left Nav Starts--------- */
+
+.left-navbar{
+    background-color: #F0F0EF;
+    padding: .5rem 0;
+    width: 20rem;
+    height: 80vh;
+    position: relative;
+    z-index: 10;
+}
+
+.left-navbar ul{
+    padding-left: 0;
+    margin-left: 1rem;
+    
+    
+}
+
+.left-navbar ul li{
+    margin: .8rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.left-navbar ul li a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+   
+}
+
+.left-navbar ul li i{
+    font-size: 1.2rem;
+    margin-right: .8rem;
+  
+}
+
+.left-navbar ul li a:hover{
+    color: orange;
+  
+   
+}
+
+.sub-manu{
+    background-color: #F0F0EF;
+    position: absolute;
+    left: 96%;
+    top: 0%;
+    width: 20rem;
+    height: 40rem;
+    padding-left: 2rem !important;
+    display: none;
+    box-shadow: 2px 2px 3px gray;
+}
+
+.left-navbar ul li:hover .sub-manu{
+    display: block;
+}
+
+/* Carousal */
+
+.slider{
+   
+    width: 100%;
+    margin: 0 1rem;
+    height: 80vh;
+    box-shadow: var(--box-shadow);
+    background-color: #BBE1FA;
+
+}
+
+
+.carousel-item {
+    height: 80vh;
+    position: relative;
+
+   
+}
+
+.carousel-item img{
+    width: 100%;
+   height: auto;
+}
+
+.overlay-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+/* Carousal ends*/
+
+
+/* -----------Left Nav Ends--------- */
+
+
+
+                  /* Main Starts */
+
+/* ----Features Section starts under Main------ */
+
+  .features{
+    margin: 8rem 1rem;
+
+  }
+
+  /* From here title class used as a common class */
+  .title{
+    margin-left: 4rem;
+    padding: .7rem 1rem;
+    background-color: orange;
+    width: 16rem;
+  }
+
+  .title::after{            
+    content: '';
+    border-top: 4.55rem orange solid;
+    border-right: 5.5rem transparent solid;
+    position: absolute;
+    display: flex;
+    margin-top: -3.84rem;
+    margin-left: 15rem;
+  }
+
+  .title h1{
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  /* Ends Up here title class used as a common class */
+
+  .feature img{
+    width: 100%;
+    height: auto;
+    padding: 0rem 4rem;
+    margin: 0 0 3rem 0;
+    
+  }
+
+  .feature{
+    transition: var(--transition);
+  }
+
+  /* .feature:hover{
+    transform: scale(1.1);
+  } */
+
+ 
+
+/* .........On Sale starts under Main........... */
+
+.on-sale{
+    margin: 0 1rem;
+    margin-bottom: 8rem;
+
+  }
+
+  .on-sale_product figure{
+    transition: var(--transition);
+    position: relative;
+  }
+
+  .on-sale_product figure img{
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    padding: 0 4rem;
+   
+  }
+
+  
+
+  .product-detail{
+    text-align: center;
+    
+  }
+
+  .product-detail .star{
+    color: orange;
+  }
+
+
+  .overlay-options{
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+    margin-left: 1%;
+   
+
+ 
+  }
+
+ .overlay-options button i{
+    font-size: 1.4rem;
+
+ }
+
+  .on-sale_product figure:hover .overlay-options{
+    transition: .6s;
+    opacity: .9;
+    margin-left: 3%;
+  }
+
+/* .........On Sale Ends under Main........... */
+
+
+/* .........New Arrivals Starts under Main........... */
+.new-arrivals{
+  margin: 0 1rem;
+  margin-bottom: 8rem;
+
+}
+
+.new-arrivals_product figure{
+  transition: var(--transition);
+  position: relative;
+}
+
+.new-arrivals_product figure img{
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+  padding: 0 4rem;
+ 
+}
+
+
+
+.product-detail{
+  text-align: center;
+  
+}
+
+.product-detail .star{
+  color: orange;
+}
+
+
+.overlay-options{
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 18%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  opacity: 0;
+  margin-left: 1%;
+ 
+
+
+}
+
+.overlay-options button i{
+  font-size: 1.4rem;
+
+}
+
+.new-arrivals_product figure:hover .overlay-options{
+  transition: .6s;
+  opacity: .9;
+  margin-left: 3%;
+}
+
+
+/* .........New Arrivals Ends under Main........... */
+
+
+/* ........Website Feature starts under Main........... */
+  .website-features{
+    margin: 0 1rem;
+    margin-bottom: 8rem;
+    padding: 1rem 0;
+  }
+
+  .website-features .row{
+    padding: 0 4rem;
+  }
+
+  .website-feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+
+  }
+
+  .website-feature img{
+   width: 5rem;
+  }
+
+  .website-feature h4{
+    font-size: 1.3rem;
+  }
+
+
+/* ........Website Feature Ends under Main........... */
+
+
+
+                    /* Main Ends */
+
+
+  /* ------------------Footer Starts------------- */
+
+  footer{
+    background-color: #000;
+    color: #fff;
+  }
+
+  /* footer .row{
+    border: 1px solid;
+  } */
+
+  .links{
+    margin: 2rem 0;
+    padding: 1rem;
+    /* border: 1px solid; */
+  }
+
+  .links h4{
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .links ul li{
+    margin-bottom: 1rem;
+  }
+
+  .links a{
+    text-decoration: none;
+    color: #cccccc;
+    
+  }
+
+/* for download column */
+  .links ul li img{
+    width: 10rem;
+  }
+
+
+  /* ------------------Footer Ends------------- */
+
+
+
+  /* **************Single Product on another html page***************** */
+
+  .single-product_slider{
+    margin: 2rem 0rem;
+    padding: 0 4rem;
+    /* border: 1px solid; */
+    height: 40rem ;
+    width: 100%;
+
+  }
+
+ /* .carousel-inner{
+  width: 100%;
+  height: 40rem;
+  box-shadow: 2px 2px 5px gray;
+
+ } */
+
+ .product-specification{
+  margin: 5rem 0rem;
+  padding: 0 4rem;
+ }
+
+ .product-specification .price{
+  color:orange ;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1rem 0;
+
+ }
+
+ .product-specification .star{
+  color: orange;
+ }
+
+ .product-specification input{
+  border: 1px solid black;
+  font-weight: bold;
+  height: 3rem;
+  width: 2.5rem;
+  font-size: 1.2rem;
+}
+
+ .product-specification label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* display: inline-block; */
+ }
+
+ .product-specification button{
+  background-color: orange;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  outline: none;
+  margin-left: 1rem;
+  padding: .5rem 1rem;
+
+}
+
+
+ .product-description{
+   padding: 0 4rem;
+   text-align: justify;
+ }
+
+
+
+
+  /* **************Single Product on another html page***************** */
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px)  {
+    /* ----Top Nav Starts---- max-width: 768px*/
+    .search-box{
+        margin: 1rem 0 !important;
+    } 
+
+    .manu-bar ul{
+        justify-content: center;
+        width: 100%; 
+       
+    }
+
+    .manu-bar ul li{
+        margin-left: .1rem; 
+        width: 32rem; 
+    }
+
+/* ----Top Nav Ends---- */
+
+
+/* ----left Nav, Cross manu icon & icon-Manu carousal starts----max-width: 768px */
+
+#icon-manu{
+    display: block;
+}
+
+.left-navbar{
+    display: none;
+    
+}
+
+#icon-cross{
+    display: none;
+}
+
+
+
+.slider{
+    position: relative;
+}
+
+.left-navbar{
+    position: absolute;
+    background-color: #f0f0efcc;
+ 
+
+}
+
+.left-navbar ul{
+    margin-left: 1.5rem;
+    
+    
+}
+
+/* ----left Nav, Cross manu icon & icon-Manu carousal Ends---- */
+
+
+
+                    /* Main Starts * max-width: 768px/
+
+/* ----Features Section starts under Main------ */
+
+
+  .title::after{
+    border-top: 4.55rem orange solid;
+    border-right: 5.5rem transparent solid;
+    margin-top: -3.84rem;
+    margin-left: 15rem;
+  }
+
+
+/* .........On Sale starts under Main.......max-width: 768px.... */
+
+.on-sale_product figure img{
+
+    height: auto;
+
+  }
+
+  .overlay-options{
+   gap: 3rem;
+ 
+  }
+
+
+
+/* .........On Sale Ends under Main........... */
+
+
+/* ........New Arrivals Starts under Main......max-width: 768px..... */
+
+/* .title{
+  width: 16.5rem;
+} */
+
+.new-arrivals_product figure img{
+
+  height: auto;
+
+}
+
+
+.overlay-options{
+  gap: 3rem;
+
+ }
+
+/* ........New Arrivals Ends under Main........... */
+
+
+/* .......Website Feature Starts under Main........... */
+
+.website-feature{
+  flex-direction: column  ;
+  justify-content: center;
+  margin: 1rem 0;
+  text-align: center;
+
+}
+
+
+/* .......Website Feature Ends under Main........... */
+
+
+             /* Main ENDS  max-width: 768px*/
+
+
+            /* Footer Starts  max-width: 768px*/
+
+  .links{
+    text-align: center;
+   }
+
+   .links h4{
+    padding: 0;
+   }
+
+   .links ul{
+    padding: 0rem;
+   }
+
+
+
+             /* Footer Ends  max-width: 768px*/
+
+
+  /* **************Single Product on another html page***************** */
+
+  .single-product_slider{
+    padding: 0 .5rem;
+  }
+
+
+  /* .product-specification{
+    margin: 5rem 0rem;
+    padding: 0 4rem;
+  
+   } */
+
+
+  /* **************Single Product on another html page***************** */
+
+
+
+
+
+
+
+}
